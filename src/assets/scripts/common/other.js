@@ -1,14 +1,13 @@
 const createUser = (name, id = 9999) => {
-    let users = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
+    let users = getUsers();
     let new_id;
     if (id === 9999) {
-        console.log(1)
         new_id = users.length ? users[users.length - 1].id + 1 : 1;
     } else {
         new_id = id;
     }
     users.push({ id: new_id, name: name });
-    localStorage.setItem("users", JSON.stringify(users));
+    saveUsers(users);
 
     return new_id;
 }

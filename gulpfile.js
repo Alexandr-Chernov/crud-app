@@ -39,7 +39,7 @@ function server() {
     browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
 }
 
-// pug
+// html
 function templates() {
     return gulp.src(paths.templates.pages)
         .pipe(fileinclude({

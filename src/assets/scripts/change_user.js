@@ -29,6 +29,7 @@ const change_user = () => {
                 });
                 window.location.replace("/");
             });
+            
             break;
         case "change":
             let input2 = document.createElement("input");

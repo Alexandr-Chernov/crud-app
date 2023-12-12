@@ -4,7 +4,7 @@ module.exports = {
     mode: "development",
     entry: {
         load_users: "./src/assets/scripts/load_users.js",
-        add_user: "./src/assets/scripts/change_user.js",
+        change_user: "./src/assets/scripts/change_user.js",
         alertBox: "./src/assets/scripts/common/alertBox.js"
     },
     output: {
