@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>CRUD App</title>
+    <link rel='stylesheet' href='assets/styles/main.min.css' />
+</head>
+
+<body>
+    <section id="alert_block"></section>
+    <div>
+        <button id="back_btn">Back</button>
+        <button id="remove_back_btn">Remove back</button>
+    </div>
+    <h1>Main</h1>
+    <form action="./change_user.html" class="add_user_form">
+        <input type="hidden" value="create" name="change_user_type">
+        <button type="submit">Add User</button>
+    </form>
+    <h2>Users:</h2>
+    <ul></ul>
+</body>
+
+<script src="./assets/scripts/load_users.bundle.js"></script>
+
+</html>
